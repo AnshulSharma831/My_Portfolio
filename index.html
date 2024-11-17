@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/49f857dd6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I am <span id="animated-text"></h1>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!---------------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me.</h1><br>
+                    <p id="aout">Aspiring Software Engineer with a strong foundation in full stack and mobile app development. Proficient in ReactJS, NodeJS, Flutter, and SQL, I enjoy building real-world solutions, from smart glasses to flood alert systems. Constantly learning and evolving, I’m passionate about creating innovative, user-focused digital experiences. Currently seeking opportunities to make a meaningful impact in the tech space.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')"><big><b>Skills</b></big></p>
+                        <p class="tab-links" onclick="opentab('experience')"><big><b>Experience</b></big></p>
+                        <p class="tab-links" onclick="opentab('education')"><big><b>Education</b></big></p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><a href="https://github.com/AnshulSharma831"><i class="fa-solid fa-link"></i></a><br>Passionate web developer skilled in creating dynamic and responsive websites. With expertise in front-end and back-end technologies like ReactJS, NodeJS, HTML, CSS, JavaScript, and Flutter, I craft user-centric solutions. Currently expanding skills in app development and exploring innovative projects, thriving on turning ideas into functional, aesthetic web experiences. </li>
+                            <li><span>App Developer</span><a href="https://drive.google.com/drive/folders/1vfYfT28yN4lgRZkE--v4eEM5y0G2MRhs?usp=drive_link"><i class="fa-solid fa-link"></i></a><br>Enthusiastic app developer with a knack for crafting smooth, user-friendly mobile applications. Skilled in Flutter, Dart, and Firebase, combining sleek design with robust functionality. Always eager to explore new technologies and turn creative concepts into impactful digital experiences.</li>
+                            <li><span>DSA</span><a href="https://www.hackerrank.com/profile/IOT1A_2212148"><i class="fa-solid fa-link"></i></a><br>Driven problem-solver with a strong foundation in Data Structures and Algorithms, recognized as a 5-star achiever in Problem Solving on HackerRank. Skilled in optimizing code for efficiency and scalability, with a focus on tackling complex challenges and building high-performance solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 -> Oct-Current</span><br>I am currently an intern at <b><a href="https://commerciax.com/">Commerciax Infotech Private Limited</a></b>, where I work as a <b><u>WordPress Developer</u></b>. My role involves creating responsive, user-friendly templates for websites, ensuring seamless performance across various devices. Through this experience, I’ve developed a keen eye for web design and functionality, focusing on optimizing the user experience and delivering professional-quality websites.</li>
+                            <li><span>2024 -> Sept-Oct</span><br>Interned at <b><a href="https://www.linkedin.com/company/brainwave-matrix-solutions/posts/?feedView=all">Brainwave Matrix Solutions</a></b>, where I focused on <b><u>App Development</u></b> using Flutter and Firebase. Contributed to building user-friendly mobile applications, ensured seamless front-end and back-end integration, and optimized app performance for a smooth user experience.</li>
+                            <li><span>2024 -> June-July</span><br>Interned at <b><a href="https://cognifyz.com/">Cognifyz Technologies</a></b> as a <b><u>Web Developer</u></b>, where I contributed to creating dynamic, responsive websites. Focused on improving user interfaces, optimizing web performance, and utilizing modern web technologies to deliver efficient and high-quality web solutions.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br><a href="https://www.psit.ac.in/">Pranveer Singh Institute of Technology</a><br>Currently pursuing a B.Tech in Computer Science (2022 - present), focusing on gaining a strong foundation in software development, problem-solving, and modern technologies.</li>
+                            <li><span>2022</span><br><a href="https://www.chintelsschool.com/Home">The Chintels School</a><br>Completed 12th Intermediate in 2022 with a score of 95%.</li>
+                            <li><span>2020</span><br><a href="https://www.chintelsschool.com/Home">The Chintels School</a><br>Completed 10th class in 2020 with a score of 92%.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------services-------------->    
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Developer</h2>
+                    <p>I offer expert web development services, specializing in building dynamic, responsive websites using HTML, CSS, JavaScript, ReactJS, and NodeJS. From creating intuitive front-end designs to developing robust back-end systems, I deliver high-quality, scalable web solutions that meet your business needs.</p>
+                    <a href="https://github.com/AnshulSharma831"><big><b>Learn more</b></big></a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Developer</h2>
+                    <p>I provide app development services, specializing in creating seamless, user-friendly mobile applications using Flutter and Firebase. From intuitive front-end designs to efficient back-end integration, I deliver high-performance apps tailored to your requirements, ensuring a smooth and engaging user experience.</p>
+                    <a href="https://drive.google.com/drive/folders/1vfYfT28yN4lgRZkE--v4eEM5y0G2MRhs?usp=drive_link"><big><b>Learn more</b></big></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>DSA</h2>
+                    <p>I offer Data Structures and Algorithms (DSA) services, specializing in solving complex problems with optimized, efficient solutions. With a strong focus on algorithmic design and problem-solving, I can help improve code performance, scalability, and efficiency for your projects.</p>
+                    <a href="https://www.hackerrank.com/profile/IOT1A_2212148"><big><b>Learn more</b></big></a>
+                </div>
+        </div>
+    </div>
+</div>
+
+<!---------------portfolio--------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Simple Calculator App</h3>
+                    <p>A sleek and user-friendly Simple Calculator App built with Flutter, designed to perform basic arithmetic operations effortlessly. With a clean interface and smooth functionality, this app ensures accurate calculations while providing an intuitive user experience. Perfect for quick computations on the go.</p>
+                    <a href="https://drive.google.com/file/d/14dBmdDYt9OS7dIihIiju_LoR8KyFJBz2/view?usp=drive_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>To-Do List App</h3>
+                    <p>A dynamic and intuitive To-Do List App developed with Flutter, designed to help you organize tasks efficiently. Featuring a clean interface, seamless task management, and optional reminders, this app empowers users to stay productive and focused throughout the day. Perfect for personal and professional task tracking.</p>
+                    <a href="https://drive.google.com/file/d/1lKm07kU6jGddtU8OUcSJFepvftEQlHSA/view?usp=drive_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Notes App</h3>
+                    <p>A minimalist and efficient Notes App built with Flutter, designed to help you capture, organize, and access your thoughts effortlessly. With features like quick note creation, simple categorization, and easy navigation, this app provides a seamless experience for managing personal and professional notes on the go.</p>
+                    <a href="https://drive.google.com/file/d/1qNfWEO3WF4g0_sdhpGYfITngUq1TfPYW/view?usp=drive_link"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://www.linkedin.com/in/anshul-sharma-831ans/" class="btn">See more</a>
+    </div>
+</div>
+
+<!-----------------------contact----------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> anshulsharma8318@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 8318575101</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/anshul-sharma-831ans"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/thepiano_master/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://x.com/Anshul_Sharma0"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Anshul.<i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
